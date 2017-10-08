@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mileage Issues</title>
+</head>
+
+<body>
+    <h1>Mileage Issues</h1>
+</body>
+
+<script type=text/javascript>
+	var mpg = Number(prompt("Enter the number of miles traveled per Gallon of gas that your car consumes:"));
+	var price = Number(prompt("What is the current price per Gallon of gas? (in dollars)"));
+        var dollars = Number(prompt("How much money do you have to spend on gas (in dollars)."));
+	var speed1 = Number(prompt("What is an average speed of miles per hour?"));
+
+        var dollars10 = dollars*1.1;
+        
+	
+
+	var calc = (mpg/price)*dollars;
+        var calc2 = (mpg/price)*dollars*1.1;
+	var time1=calc/speed1
+	var calc3 = time1*0.85
+	var calc4 = time1*1.15
+	var time2=calc2/speed1
+	var calc5 = time2*0.85
+	var calc6 = time2*1.15
+
+	document.write("Your car gets " + mpg + " miles per gallon.<br />");
+	document.write("Gas currently costs $" + price + ".<br />");
+	document.write("If you have $" + dollars + "miles per hour, then you can travel " + calc + " miles.<br />");
+        
+	document.write("At an average speed of" + speed1 + "miles per hour, your expected trip time will be between " + calc3 + " and " + calc4 + " hours.<br />");
+	document.write("But, if you have 10% more money \($" + dollars*1.1+ "), then you can travel " + calc2 + " miles.<br />");
+        document.write("At an average speed of" + speed1 + "miles per hour, your expected trip time will be between " + calc5 + " and " + calc6 + " hours.<br />");
+        
+</script>
+
+</html>

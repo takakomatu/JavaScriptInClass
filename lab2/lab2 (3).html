@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mileage Issues</title>
+</head>
+
+<body>
+    <h1>Mileage Issues</h1>
+</body>
+
+<script type=text/javascript>
+	var mpg = Number(prompt("Enter the number of miles traveled per Gallon of gas that your car consumes:"));
+	var price = Number(prompt("What is the current price per Gallon of gas? (in dollars)"));
+        var dollars = Number(prompt("How much money do you have to spend on gas (in dollars)."));
+        var dollars10 = dollars*1.1;
+        
+	var calc = (mpg/price)*dollars;
+        var calc2 = (mpg/price)*dollars*1.1;
+
+
+	document.write("Your car gets " + mpg + " miles per gallon.<br />");
+	document.write("Gas currently costs $" + price + ".<br />");
+	document.write("If you have $" + dollars + ", then you can travel " + calc + " miles.<br />");
+        document.write("But, if you have 10% more money \($" + dollars*1.1+ "), then you can travel " + calc2 + " miles.<br />");
+
+        
+        
+</script>
+
+</html>
